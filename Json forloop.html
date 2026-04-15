@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label for="city">Select a city</label>
+        <select id ="city"></select>
+        <script> 
+            const cityData = {
+                "cities": [
+                    {"id":1,"name":"New York","country": "USA"},
+                    {"id":2,"name":"Los Angelos", "country": "USA"},
+                    {"id":3,"name":"London", "country": "UK"},
+                    {"id":4,"name":"Tokyo", "country": "Japan"},
+                    {"id":5,"name":"Paris", "country": "France"},
+                    {"id":6,"name":"Berlin", "country": "Germany"},
+                    {"id":7,"name":"Sydney", "country": "Australia"},
+                    {"id":8,"name":"Toronto", "country": "Canada"},
+                    {"id":9,"name":"Mumbai", "country": "India"},
+                    {"id":10,"name":"Dubai", "country": "UAE"} 
+                    ]
+            };
+            const citySelect = document.getElementById("city");
+            cityData.cities.forEach(ref =>
+            {
+                let option = document.createElement("option");
+                option.value = ref.id;
+                option.textContent = ref.name;
+                citySelect.appendChild(option);
+            });
+        </script>  
+    </body>
+    </html>

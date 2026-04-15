@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+	#mouse-area {
+	width: 300px;
+	heidht: 200px;
+	background-color:lightblue;
+	text-align:center;
+	line-height:200px;
+	margin:20px auto;
+	border: 2px solid blue;
+	}
+	#message {
+	text-align:center;
+	font-size:10px;
+	mardin-top:10px;
+	}
+</head>
+<body>
+<div id="mouse-area">Hover or Click on me!</div>
+<div id="message"></div>
+<script>
+const mouseArea = document.getElementById("mouse-area");
+const message = document.getElementById("message");
+mouseArea.addEventlistener("mouseover", () => {
+message.textContent = "Mouse entered the area!";
+});
+mouseArea.addEventlistener("mouseout", () => {
+message.textContent = "Mouse left the area!";
+});
+mouseArea.addEventlistener("click", () => {
+message.textContent = "You clicked in this area";
+});
+</script>
+</body>
+</html>

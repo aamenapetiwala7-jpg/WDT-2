@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<input type="email" id="email" placeholder="Enter your email">
+<button onclick="setEmailCookie()">Set Cookie </button>
+<script>
+function setEmailCookie() {
+    const email = document.getElementById("email").value;
+    if(!email) {
+        alert("Please enter a valid email address");
+        return;
+    }
+    const d = new Date();
+    d.setMonth(d.getMonth() + 1);
+    document.write(d.toUTCString());
+    document.cookie = `user_email=$(email); ${expires}`;
+    alert("Cookie set succesfully");
+}
+</script>
+</body>
+</html>

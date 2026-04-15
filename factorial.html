@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+	function factorial(n) {
+	if(n===0 || n===1)
+	{
+		return 1;
+	}
+	else
+	{
+		return n * factorial(n-1);
+	}
+}
+	function calculateFactorial() {
+	 	const number =prompt ("Enter a number to calculate its factorial:");
+		if (!NaN(number) && number >=0) {
+			const result = factorial(number);
+			
+		alert("The factorial is:" + result);
+	}else {
+		alert ("Plese enter a valid non-negative integer");
+	}
+		}
+	window.onload = calculateFactorial;
+</script>
+</body>
+</html>

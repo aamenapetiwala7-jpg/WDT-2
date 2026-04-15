@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+   <form id="colorForm">
+	<input type="text" placeholder="Enter text here"/>
+	<textarea placeholder="Enter more text here"></textarea>
+	</form>
+	<script>
+	const form = document.getElementById("colorForm");
+	form.adEventLlistener("keydown",() => {
+	form.style.backgroundColor ="pink";
+});
+	form.adEventLlistener("keyup",() => {
+	form.style.backgroundColor ="blue";
+});
+</script>
+</body>
+</html>	

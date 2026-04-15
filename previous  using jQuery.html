@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="z:\WDT-2\jfile.js"></script>
+    <style>
+        .container {
+            margin:20px;
+        }
+        .parent {
+            padding:20px;
+            margin:10px;
+            background-color:yellow;
+            border:1px solid #ccc;
+        }
+        .child {
+            padding: 10px;
+            margin: 5px;
+            background-color: #ddd;
+        }
+        .highlight {
+            background-color:yellow;
+        }
+        <body>
+            <div class="container">
+                <h2>Using prev() and parents() Methods on jQuery</h2>
+
+                <div class="container">
+                    <h3>This is the parent element</h3>
+
+                    <div class="child" id="child1">
+                        <p>child element</p>
+                    </div>
+
+                    <div class="child" id="child2">
+                        <p>child element</p>
+                    </div>
+
+                    <div class="child" id="child3">
+                        <p>child element</p>
+                    </div>
+            </div>
+            </div>
+            <button id="prevElement">Highlight previous Element</button>
+            <button id="parentButton">Highlight parent Element</button>
+            
+            <script>
+                $(document).ready(function() {
+                    var preElement = $('child2').
+                })

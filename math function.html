@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+	body {
+		font-family: arial, sans-serif;
+		text-align:center;
+		margin-top:50px;
+}
+	.container { width:300px; margin:auto;}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Math Operation</h2>
+<label for="number">Enter a number</label>
+<input type id="number" placeholder="Enter a number" required>
+
+<label for="exponent">Enetr exponent (for power function):</label>
+<input type id="exponent" placeholder="Enter a exponent" required>
+<button onclick="calculateSqrt()"> Calculate Square Root</button>
+<button onclick="calculatePower()"> Calculate power</button>
+</div>
+<script>
+	function calculateSqrt() {
+		let num = document.getElementById("number").value;
+		if(num=== "" ||  num < 0) {
+			alert("Please enter a valid non-negative number");
+			return;
+		}	
+		let result = math.sqrt(num);
+		document.getElementById("result").innerText = "Square Root:" + result;
+}
+  function calculatePower() {
+	let exp = document.getElementById("exponent").value;
+	if(num=== "" || exp ==="") 
+			alert("Please enter a valid number for both feilds");
+			return;
+
+	let result = math.pow(num,exp);
+	document.getElementById("result").innerText = "Power Result:" + result;
+}
+</script>
+</body>
+</html>
+
+	 		
+		

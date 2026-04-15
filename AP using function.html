@@ -1,0 +1,26 @@
+<html
+<head>
+</head>
+<body>
+<script>
+function performArithmeticOperations(a,b) {
+	return {
+		sum: a + b,
+		difference: a - b,
+		multiple: a * b,
+		Division: b !==0 ? a/b : "Infinity (division by zero)",
+	};
+}
+const num1 = parseFloat(prompt("Enter first number:"));
+const num2 = parseFloat(prompt("Enter second number:"));
+	const result = performArithmeticOperations(num1,num2);
+	alert(
+		`Tis is my result :
+		sum is: ${result.sum}
+		diffrence is: ${result.diffrence}
+		multiple is: ${result.multiple}
+		Division is: ${result.Division}`
+);
+</script>
+</body>
+</html>

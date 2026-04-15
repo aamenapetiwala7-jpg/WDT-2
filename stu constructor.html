@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+class Student {
+name;
+age;
+course;
+displayDetails()
+{
+	console.log("name:" +this.name);
+	console.log("age:" + this.age);
+	console.log("course:" + this.course);
+} 
+greet()
+{
+	console.log("Hello my name is:" + this.name);
+}
+}
+let object = new Student();
+object.name = "Aamena";
+object.age = "18";
+object.course = "Bsc-IT";
+
+object.displayDetails();
+object.greet();
+</script>

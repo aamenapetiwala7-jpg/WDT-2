@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Even <p> Elements</title>
+            <script src="z:\WDT-2\jfile.js"></script>
+            <script>
+                $(document).ready (function() {
+                    $('p').filter(function (index) {
+                        return index % 2 ==0;
+                    }).css('color','red');
+
+                  
+                    $('tr').filter(function(index){
+                        return index % 2 ==0;
+                    }).css('color','blue');
+
+                    $('li').filter(function(index) {
+                        return index %2==0;
+                    }).css('color','lightblue');
+
+                });
+                </script>
+                </head>
+                <body>
+                    <p>This is first paragraph </p>
+                    <p>This is second paragraph </p>
+                    <p>This is third paragraph </p>
+                    <p>This is fourth paragraph </p>
+                    <p>This is fifth paragraph </p>
+
+                    <table border ="1">
+                        <tr><th>ID</th><th>Name</th></tr>
+                        <tr><td>1</td><td>A</td></tr>
+                        <tr><td>2</td><td>B</td></tr>
+                        <tr><td>3</td><td>C</td></tr>
+                        <tr><td>4</td><td>D</td></tr>
+                        </table>
+                        <h4>Subject List</h4>
+                        <ul>
+                            <li>1.Maths</li>
+                            <li>2.English</li>
+                            <li>3.Science</li>
+                            <li>4.Hindi</li>
+                            </ul>
+                    </body>
+                    </html>

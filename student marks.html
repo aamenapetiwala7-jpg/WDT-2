@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<p id="output"></p>
+<script>
+let marks = [87,85,45,97,83];
+let total = 0;
+for(let i = 0; i < marks.length;i++)
+{
+	total +=marks[i];
+}
+let percentage = (total / (marks.length * 100)*100);
+document.getElementById("output").innerHTML =
+"Marks:" + marks.join(",") + "<br>" +
+"Total Marks" + total + "<br>" +
+"Percntage" + percentage.toFixed(2) + "%";
+</script>
+</body>
+</html>

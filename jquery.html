@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="z:\WDT-2\jfile.js"> </script>
+    </head>
+    <body>
+        <div>
+            <b>This is paragraph inside a div </b>
+            <strong>This is span </strong>
+            <b>Another paragraph inside a div </b>
+        </div>
+        <div>
+            <p>This is another div</p>
+        </div>
+        <p>This is paragraph outside div</p>
+        <script>
+            $(document).ready(function() {
+                $('div strong').each(function() {
+                    console.log($(this).text());
+                });
+            });
+        </script>
+    </body>
+</html>

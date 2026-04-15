@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+    function WriteCookie()  {
+        let value = document.getElementById("customer").value;
+        if(value == ""){
+                alert("Enter some value");
+                return;
+        }
+        letCookieValue = value + ";";
+        document.cookie = "name" + CookieValue;
+        document.write("Setting cookie:" + CookieValue);
+    }
+</script>
+</head>
+<body>
+    Enter name: <input type="text" id="customer" name="customer"/>
+    <input type = "button" value="Set Cookie" onclick="WriteCookie();"/>
+</body>
+</html>

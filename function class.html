@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+class Student {
+  constructor(name,age,marks) {
+	this.name = name;
+	this.age = age;
+	this.marks = marks;
+}
+  getDetails() {
+	return `Name:${this.name}, Age:${this.age}, Marks:${this.marks}`;
+   }
+}
+const Student1 = new Student("Alice",19,85);
+console.log(Student1.getDetails());
+</script>
+</head>
+</html>

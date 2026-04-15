@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Click on the image to resize it </h1>
+<img id="myImage" src="Z:\print.jpg" alt="Placeholder Image" width="300px" onclick="resizeImage()">
+<script>
+	function resizeImage() {
+	const image= document.getElementById("myImage");
+	if(image.style.width === "500px") {
+	image.style.width="300px";
+}	else {
+	image.style.width="500px";
+	}
+}
+</script>

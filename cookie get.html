@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+	function storeCookie() {
+		var email = document.getElementById("email").value;
+		var password = document.getElementById("password").value;
+		document.cookie = "email=" + email;
+		document.cookie = "password=" + password;
+		
+		alert("Cookie stored succesfully");
+	}
+	function getAllCookies() {
+		document.getElementById("output").value = document.cookie;
+	}
+	</script>
+</head>
+<body>
+		<label>Email:</label>
+		<input type="text" id="email"><br><br>
+		<input type="password" id="password"><br><br>
+		<input type ="button" value ="store" onclick="storeCookie()">
+		

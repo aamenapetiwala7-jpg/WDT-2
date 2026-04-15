@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+	body  {
+		font-family: Arial,san-serif;
+	}
+  #container  {
+	display: flex;
+	align-items:center;
+	gap: 20px;
+	margin:20px;
+	}
+  #imageList {
+	line-height: 2;
+	}
+  #img {
+	border:1px solid #ccc;
+	max-width: 300px;
+	height: auto;
+	}
+</style>
+</head>
+<body>
+<h1>Select Image</h1>
+<div id="container">
+  <div id="imageList">
+	<label><input type="radio" name="imageSelector" value="img2.jpg" checked>Blue Hills</label><br>
+	<label><input type="radio" name="imageSelector" value="img1.jpg">Sunset</label><br>
+	<label><input type="radio" name="imageSelector" value="img2.jpg">Water lilies</label><br>
+</div>
+  <img id="displayedImage" src="img1.jpg" alt="Selected Image">
+</div>
+
+<script>
+  const radios = document.querySelectorAll('input["imageSelector"]');
+  const image = document.getElementById('displayedImage');
+  for(let i=0;i < radio.length;i++)  {
+	radio[i].addEventListener('change',(e => {
+	image.src =e.target.value;
+	});
+	}
+</script>
+</body>
+</html>
+	

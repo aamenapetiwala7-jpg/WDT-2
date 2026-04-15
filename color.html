@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+	<h1>Change Text-box Content Color</h1>
+	<input type="text" id="text-box" placeholder="Enter text here....">
+	<br>
+	<button onclick="changeColor('red')">Red</button>
+	<button onclick="changeColor('green')">Green</button>
+	<button onclick="changeColor('blue')">Blue</button>
+<script>
+function changeColor(mycolor) {
+	document.getElementById('text-box').style.color = mycolor;
+	}
+</script>
+</body>
+</html>

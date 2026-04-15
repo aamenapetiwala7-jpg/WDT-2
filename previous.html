@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="z:\WDT-2\jfile.js"> </script>
+        <style>
+            .highlight {
+                background-color: yellow;
+            }
+            </style>
+    </head>
+    <body>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <div>Some othe div</div>
+        <p>paragraph 3</p>
+
+        <div id="div1">Target div </div>
+        <script>
+            $(document).ready(function() {
+                let prevP = $('#div1').prev('p');
+
+                if(prevP.length){
+                prevP.addClass('highlight');
+            console.log("Previous P elements: ",prevP);
+            } else { 
+                console.log("No previous P element: ");
+            }
+                
+            });
+        </script>
+        </body>
+        </html> 

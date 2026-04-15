@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="z:\WDT-2\jfile.js"></script>
+    </head>
+    <body>
+        <div id="div1">
+            <p>This is paragraph inside div 1</p>
+            <span>This is span inside div 1</span>
+            <strong>This is strong text inside div 1</strong>
+            </div>
+            <div><p>another div</p></div>
+                <p>This is paragraph outside div 1</p>
+                <button id="hideBtn">Hide element inside # div 1</button>
+                <script>
+                    $(document).ready(function() {
+                        $('#hidebtn').click(function() {
+                            $('#div1').children().hide();
+                        });
+                    });
+                    </script>
+                    </body>
+                    </html>
+                

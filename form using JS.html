@@ -1,0 +1,57 @@
+<html>
+<head>
+</head>
+<body>
+/*<script>
+function validateForm()   {
+	const name = document.form["registrationForm"]["name"].values;
+	const email = document.form["registrationForm"]["email"].values;
+	const phone = document.form["registrationForm"]["phone"].values;
+	const password = document.form["registrationForm"]["password"].values;
+	const ConfirmPassword = document.form["registrationForm"]["ConfirmPassword"].values;
+	const DOB = document.form["registrationForm"]["DOB"].values;
+
+	if(name.trim()==="")  {
+		alert("Name is required");
+		return false;
+	}
+	const email pattern = /^ [^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!emailPattern.test(email))  {
+	alert("Please enter a valid email");
+	return false;
+	}
+	const phonePattern = /^\d(10)$/;
+	if (!phonePattern.test(phone))  {
+	alert("Please enter a valid 10-digit number.");
+	return false;
+	}
+	if(password.length<6) {
+		alert("Password must be atleast 6 character long");
+		return false;
+	}
+	if(password !== Confirm Password)  {
+		alert("Password do not match");
+		return false;
+	}	
+	if(dob === "")  {
+		alert("Date is required");
+	return false;
+	}
+	alert("Form submitted sucessfully");
+	return true;
+}
+</script>   */
+
+<form name"registrationForm" onsubmit="return validateform">
+<br>Name:<input type="text"/><br>
+<br>Email:<input type="email" placeholder="name@domain.com"/><br>
+<br>Phone No.:<input type="tel" name="phone" max="10"/><br>
+<br>Password:<input type="text"/><br>
+<br>ConfirmPassword:<input type="text"/><br>
+<br>DOB:<input type="date" placeholder="dd-mm-yyyy"/>(dd-mm-yyyy)<br>
+<br>Gender:<input type="radio" name="gender" value="Male">Male</input><br>
+<br><input type="radio" name="gender" value="Female">Female</input><br>
+<br><input type="Submit" value="Submit"/>
+</form>
+</body>
+</html>

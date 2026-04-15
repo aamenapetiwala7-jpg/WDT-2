@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script  src="z:\WDT-2\jfile.js"> </script>
+    </head>
+    <body>
+        <div id="parent">
+            <p class="child">Child 1</p>
+               <p class="child">Child 2</p>
+               <div>
+                <p class="child">Nested Child</p>
+                </div>
+        </div>
+        <div>
+            <p>Sibling 1</p>
+            <p id="target">Target Element</p>
+            <p> Sibling 2</p>
+        </div>
+        <button id="childrenBtn"> Find Children</button>
+        <button id="siblingsBtn">Find Siblings</button>
+        <script>
+            $(document).ready(function() {
+                $("#childrenBtn").click(function(){
+                    $("#parent").children(".child").css("background-color", "lightgreen");
+                });
+				 $("#siblingBtn").click(function(){
+                    $("#target").sibling().css("background-color", "yellow");
+            });
+			});
+			</script>
+				</body>
+				</html>

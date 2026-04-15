@@ -1,0 +1,57 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Login </h2>
+        <p>Please fill th form </p>
+        <form onSubmit="return validateForm">
+            <label> User Name: </label>
+            <input type = "text" id="username" placeholder = "Username">
+            <label>Password: </label>
+            <input type ="Password"  id="Password" placeholder ="Enter Password">
+            <input type ="checkbox"> Remember Me <br><br>
+            <div>
+                <button type="reset" class="cancel">Cancel</button>
+                <button type="submit" class="login">Login </button>
+            </div>
+            <p class="error" id="errormsg">
+        </form>
+        <script>
+            function validateForm() {
+                let username = document.getElementById("username").value.trim;
+                let Password = document.getElementById("Password").value.trim;
+                let errormsg = document.getElementById("errormsg").value;
+                errormsg.innerHTML = "";
+                
+                if(username = " " || Password = " ")
+                {
+                    errormsg.innerHTML ="All feilds are required";
+                    return false;
+                }
+
+                if(username.length <= 3 || username.length >= 21)
+                {
+                    errormsg.innerHTML ="Password must be greater than 3 letters and less than 21 letters";
+                    return false;
+                }
+
+                let validatePattern = /^[A-Za-z0-9_]+$
+                if(!validatePattern.test(username))
+                {
+                    errormsg.innerHTML = "username can only contain letter and numbers";
+                    return false;
+                }
+
+                if(password!= username + 1234)
+                {
+                    errormsg.innerHTML = "Password must be username + 1234"; 
+                    return false;
+                }
+                
+                alert("Login submitted successfully!");
+                return true;
+
+            }
+            </script>
+            </body>
+            </html>

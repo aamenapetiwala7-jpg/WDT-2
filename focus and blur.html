@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<h3>Focus and Blur Example </h3>
+<label for ="textbox1">Textbox1:</label>
+<input type ="text" id="textbox1" onfocus="focusEvent(this)" onblur = "blurEvent(this)">
+<br>
+<br>
+<label for ="textbox2">Textbox2:</label>
+<input type ="text" id="textbox2" onfocus="focusEvent(this)" onblur = "blurEvent(this)">
+<script>
+	function focusEvent(element) {
+	element.style.backgroundColor = "blue";
+	element.style.Color = "white";
+}
+	function blurEvent(element) {
+	element.style.backgroundColor = "pink";
+	element.style.Color = "black";
+}
+</script>
+</body>
+</html>

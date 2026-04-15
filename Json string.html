@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            let person = {
+                name: "John",
+                age: 25,
+                isStudent: false
+            };
+            let jsonString = JSON.stringify(person);
+            console.log(jsonString);
+            let jsonData = '{"name":"John","age":25,"isStudent":false}';
+            let obj = JSON.parse(jsonData);
+            console.log(obj.name);
+            console.log(obj.age);
+        </script>
+    </body>
+</html>

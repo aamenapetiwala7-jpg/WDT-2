@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+body{
+	font-family:Arial,sans-serif;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	margin:0;
+	background-color:#f4f4f9;
+}
+img{	
+	width:300px;
+	height:300px;
+	border:2px solid #ccc
+	border-radius:10px;
+	transition:border-color 0.3s;
+}
+img:hover {
+	border-color:#007bff;
+}
+</style>
+</head>
+<body>
+<img
+	src="img1.jpg"
+	id="hoverImage"
+	onmouseover="changeImage('img2.jpg')"
+	onmouseout="changeImage('img1.jpg')"
+/>
+<script>
+	function changeImage(newSrc) {
+		document.getElementById("hoverImage").scr = newSrc;
+}
+</script>

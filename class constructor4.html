@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+class Marks {
+  constructor (english,science, maths) {
+	this.english = english;
+	this.science = science;
+	this.maths = maths;
+	this.Total= calculateTotal();
+	this.Percentage = calculatePercentage();
+	}
+calculateTotal() {
+	return this.english + this.science + this.maths;
+}
+  calculatePercentage() {
+	return (this.Total / 300) * 100;
+}
+  showDetails() {
+	console.log(`Marks: English: ${this.english},
+	Science: ${this.science},
+	Maths: ${this.maths}`);
+	console.log(`Percentage: ${this.Percentage.toFixed(2)}"%"`);
+	}
+}
+let student = new Marks(85,90,80);
+student.showDetails();
+</script>
+</head>
+</html>

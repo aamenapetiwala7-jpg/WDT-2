@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+	function login()   {
+	const userName = prompt("Enter your name:");
+	if (userName)
+	{
+		const confirmation = confirm 
+		("Are you sure you wany to login with the name:" + userName);
+		if (confirmation)
+		{
+			document.body.innerHTML = '<h2>Welcome,' +userName;
+		}
+	}
+	else
+	{
+		alert("You must enter a name to proceed.");
+	}
+	window.onload = login;
+	</script>
+	</body>
+	</html>
