@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="z:\WDT-2\jfile.js"></script>
+<style>
+	#box {
+			width:200px;
+			height:100px;
+			background-color:lightblue;
+			position: relative;
+		}
+</style>
+</head>
+<body>
+	<button id="animateButton">Animate Box</button>
+	<div id="box"> </div>
+	<script>
+		$(document).ready(function() {
+		$("#animateButton").click(function() {
+			$("#box").animate ({
+					left:"200px",
+					width:"200px",
+					height: "200px",
+					opacity: 0.5
+					}, 5000);
+					});
+				});
+	</script>
+</body>
+</html>

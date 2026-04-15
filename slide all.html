@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="z:\WDT-2\jfile.js"></script>
+        <style>
+            #content {
+                width: 300px;
+                padding: 20px;
+                background-color: lightblue;
+                text-align:center;
+                margin-top:10px;
+                display:block;
+            }
+            button {
+                margin:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="slideUp">Slide Up</button>
+        <button id="slideDown">Slide Down</button>
+        <button id="toggle">Toggle</button>
+        <div id="content">Thisis sliding content box</div>
+        <script>
+            $(document).ready(function() { 
+                $("#slideUp").click(function() {
+                    $("#content").slideUp();
+                });
+
+                $("#slideDown").click(function() {
+                    $("#content").slideDown();
+                });
+
+                $("#toggle").click(function() {
+                    $("#content").slideToggle()
+                });
+            });
+        </script>
+    </body>
+</html>

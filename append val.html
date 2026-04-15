@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="z:\WDT-2\jfile.js"></script>
+        </head>
+        <body>
+            <select id="city">
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodara</option>
+            </select>
+            <button id="btn">Get City </button>
+            <script>
+                $(document).ready(function() {
+                    $('#btn').click(function() {
+                        var city = $("#city").val();
+                        alert("Selected city: " + city);
+                    });
+                });
+            </script>
+            </body>
+            </html>

@@ -1,0 +1,66 @@
+<html>
+<head>
+<script src="z:\WDT-2\jfile.js"></script>
+<style>
+	#box {
+			width:200px;
+			height:100px;
+			background-color:lightblue;
+			margin-top:10px;
+			padding:10px;
+		}
+</style>
+</head>
+<body>
+<h2>jQuery All Function Demo </h2>
+<input type="text" id="name" placeholder="Enter Name">
+<br><br>
+<button id="getVal">Get Value</button>
+<button id="setVal">Set Value</button>
+<button id="append">Append</button>
+<button id="prepend">Prepend</button>
+<button id="after">After</button>
+<button id="before">Before</button>
+<button id="show">Show</button>
+<button id="hide">Hide</button>
+
+<div id="box">This is box </div>
+<script> 
+$(document).ready(function() {
+$("#getVal").click(function()
+alert($("#name")).val();
+});
+
+
+$("#setVal").click(function()
+alert($("name")).val("Aamena");
+});
+
+$("#append").click(function()
+$("#box").append("<p>Append Text </p>");
+});
+
+
+$("#prepend").click(function()
+$("#box").prepend("<p>Prepend Text</p>");
+});
+
+$("#after").click(function()
+$("#box").after("<p>Text after box</p>");
+});
+
+
+$("#hide").click(function()
+$("#box").hide();
+});
+
+$("#show").click(function()
+$("#box").val();
+});
+
+$(document).ready(function() {
+$("#getVal").click(function()
+alert($("name")).val();
+});
+
+});
